@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Request</title>
+    <link rel="stylesheet" href="leave.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> 
+            <h1>Proxy Desk</h1>
+        </div>
+        <div class="header-right">
+            <!-- Dark Mode Toggle -->
+            <button id="mode-toggle" aria-label="Toggle dark mode">🌙</button>
+            
+            <!-- Profile -->
+            <div class="profile">
+                <img src="profile.jpg" alt="Admin" aria-hidden="true">
+                <span>Admin Name</span>
+            </div>
+            <div>
+                <a href="faculty_home.html">Home</a>
+            </div>
+
+        </div>
+    </header>
+    
+    <div class="form-container">
+        <h2>Proxy Request</h2>
+        <form id="leaveForm" action="#" method="POST"> <!-- Add action and method attributes -->
+            <label for="leave-date-start">Select the date of proxy:</label>
+            <input type="date" id="leave-date-start" name="leave-date-start" required>
+
+            <!-- Faculty Dropdown -->
+            <label for="faculty-select">Select Faculty:</label>
+            <select id="faculty-select" name="faculty-select" required>
+                <option value="" disabled selected>Select Faculty</option>
+                <option value="faculty1">ABM</option>
+                <option value="faculty2">AJS</option>
+                <option value="faculty3">APC</option>
+                <option value="faculty4">AYT</option>
+                <option value="faculty5">DAB</option>
+                <option value="faculty6">DRK</option>
+                <option value="faculty7">KJM</option>
+                <option value="faculty8">MCD</option>
+                <option value="faculty9">MJP</option>
+                <option value="faculty10">MKP</option>
+                <option value="faculty11">MLR</option>
+                <option value="faculty12">NMB</option>
+                <option value="faculty13">PSP</option>
+                <option value="faculty14">RJC</option>
+                <option value="faculty15">RNP</option>
+                <option value="faculty16">RPP</option>
+                <option value="faculty17">RRP</option>
+                <option value="faculty18">SAP</option>
+                <option value="faculty19">VHK</option>
+            </select>
+            
+            <label>Select the period of proxy:</label>
+            <div class="radio-container">
+                <div>
+                    <input type="radio" id="slot1" name="leave-slot" value="09:10 - 10:10" required>
+                    <label for="slot1">09:10 - 10:10</label>
+                </div>
+                <div>
+                    <input type="radio" id="slot2" name="leave-slot" value="10:10 - 11:10" required>
+                    <label for="slot2">10:10 - 11:10</label>
+                </div>
+                <div>
+                    <input type="radio" id="slot3" name="leave-slot" value="12:10 - 01:10" required>
+                    <label for="slot3">12:10 - 01:10</label>
+                </div>
+                <div>
+                    <input type="radio" id="slot4" name="leave-slot" value="01:10 - 02:10" required>
+                    <label for="slot4">01:10 - 02:10</label>
+                </div>
+                <div>
+                    <input type="radio" id="slot5" name="leave-slot" value="02:20 - 03:20" required>
+                    <label for="slot5">02:20 - 03:20</label>
+                </div>
+                <div>
+                    <input type="radio" id="slot6" name="leave-slot" value="03:20 - 04:20" required>
+                    <label for="slot6">03:20 - 04:20</label>
+                </div>
+            </div>
+
+            <label for="leave-reason">Reason for proxy:</label>
+            <textarea id="leave-reason" name="leave-reason" rows="4" cols="50" required></textarea>
+            
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

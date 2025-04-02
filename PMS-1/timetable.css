@@ -1,0 +1,181 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Background */
+body {
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    min-height: 100vh; /* Ensure body takes full height */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #004080, #005cbf); /* Dark blue gradient */
+    padding: 15px 50px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Right Side Header */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right button {
+    background: none;
+    border: none;
+    color: white; /* Ensure button text is white */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-right .profile {
+    display: flex;
+    align-items: center; /* Align items in the profile section */
+    gap: 10px; /* Space between image and text */
+    color: white; /* Ensure profile text is white */
+}
+
+.header-right .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circular profile image */
+}
+
+/* Container with Glassmorphic Effect */
+.container {
+    flex: 1; /* Allow the container to grow and fill the space */
+    width: 90%;
+    max-width: 800px; /* Set maximum width */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; /* Center the container with margin */
+    color: white; /* Text color */
+}
+
+/* Header Inside Container */
+.container header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Button Styling */
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745; /* Green */
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Timetable Container */
+#timetable-container {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+table th {
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+.status-free {
+    background-color: rgba(0, 255, 0, 0.6); /* Green for free */
+}
+
+.status-busy {
+    background-color: rgba(255, 0, 0, 0.6); /* Red for busy */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #ffffff;
+    margin-top:

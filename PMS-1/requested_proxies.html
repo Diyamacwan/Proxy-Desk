@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requested Proxies</title>
+    <link rel="stylesheet" href="requested_proxies.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> 
+            <h1>Proxy Desk</h1>
+        </div>
+        <div class="header-right">
+            <button id="mode-toggle">🌙</button>
+            <div class="profile">
+                <img src="profile.jpg" alt="Admin">
+                <span>Admin Name</span>
+                <div>
+                    <a href="profile.html" style="color: aliceblue;">Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <section class="table-section">
+                <h2>Pending Proxy Requests</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Requesting Faculty</th>
+                            <th>Date</th>
+                            <th>Slot</th>
+                            <th>Reason</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="requestTable">
+                        <tr>
+                            <td>1</td>
+                            <td>Martin Parmar</td>
+                            <td>2025-03-12</td>
+                            <td>9:10 - 10:10</td>
+                            <td>Medical Appointment</td>
+                            <td class="status">Pending</td>
+                            <td>
+                                <button class="approve-btn" onclick="updateStatus(this, 'Approved')">Approve</button>
+                                <button class="reject-btn" onclick="updateStatus(this, 'Rejected')">Reject</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sneha Padhiar</td>
+                            <td>2025-03-13</td>
+                            <td>12:10 - 2:10</td>
+                            <td>Seminar Attendance</td>
+                            <td class="status">Pending</td>
+                            <td>
+                                <button class="approve-btn" onclick="updateStatus(this, 'Approved')">Approve</button>
+                                <button class="reject-btn" onclick="updateStatus(this, 'Rejected')">Reject</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Proxy Desk</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

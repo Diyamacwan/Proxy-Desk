@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Proxy Monitoring</title>
+    <link rel="stylesheet" href="admin_styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> 
+            <h1>Proxy Desk</h1>
+        </div>
+        <div class="header-right">
+            <!-- Dark Mode Toggle -->
+            <button id="mode-toggle">🌙</button>
+            
+            <!-- Profile -->
+            <div class="profile">
+                <img src="profile.jpg" alt="Admin">
+                <span>Admin Name</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="monitor-section">
+        <h2>Monitor Proxy Requests</h2>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="🔍 Search Faculty, Date, or Subject">
+        </div>
+
+        <!-- Proxy Requests Table -->
+        <div class="table-container">
+            <table id="proxyTable">
+                <thead>
+                    <tr>
+                        <th>Faculty Name</th>
+                        <th>Requested Date</th>
+                        <th>Proxy Faculty</th>
+                        <th>Subject</th>
+                        <th>Time Slot</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dr. Arpita  Shah</td>
+                        <td>March 10, 2025</td>
+                        <td>Prof. Brinda Verma</td>
+                        <td>DBMS</td>
+                        <td>10:10 AM - 11:10 AM</td>
+                        <td class="status pending">Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Dr.Ritesh  Patel</td>
+                        <td>March 9, 2025</td>
+                        <td>Prof.Krunal  Maheriya</td>
+                        <td>DCN</td>
+                        <td>2:20 PM - 3:20 PM</td>
+                        <td class="status approved">Approved</td>
+                    </tr>
+                    <tr>
+                        <td>Dr.Martin Parmar</td>
+                        <td>March 8, 2025</td>
+                        <td>Prof. Parmanand Patel</td>
+                        <td>SGP</td>
+                        <td>10:10 AM - 11:20 PM</td>
+                        <td class="status rejected">Rejected</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Proxy Management System | All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

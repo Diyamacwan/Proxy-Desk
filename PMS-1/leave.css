@@ -1,0 +1,196 @@
+/* Body and Background Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack header and form vertically */
+    height: 100vh;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB); /* Light blue gradient */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #004080, #005cbf);
+    padding: 15px 50px;
+    color: white;
+    width: 100%; /* Full width */
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Position header at the top */
+    top: 0; /* Align to the top */
+    height: 50px; /* Fixed height for the header */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Right Side Header */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Bold text */
+}
+
+.header-right a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Form Container */
+.form-container {
+    background: linear-gradient(145deg, #E3F2FD, #64B5F6); /* Subtle blue gradient */
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(13, 71, 161, 0.4); /* Blue shadow effect */
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    text-align: center;
+    border-top: 6px solid #0D47A1; /* Dark blue accent */
+    margin-top: 80px; /* Space below the header */
+    animation: fade-in 0.8s ease-in-out;
+}
+
+/* Animation for smooth appearance */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #0D47A1;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(13, 71, 161, 0.5);
+    text-transform: uppercase;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    display: block;
+    font-weight: 600;
+    color: #0D47A1;
+    margin-top: 10px;
+}
+
+/* Input Fields */
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #1976D2;
+    border-radius: 10px;
+    background-color: #E3F2FD;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(25, 118, 210, 0.5);
+    outline: none;
+}
+
+/* Time Slot Styling */
+.radio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: left;
+}
+
+.radio-container div {
+    background: linear-gradient(135deg, #BBDEFB, #64B5F6);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid #0D47A1;
+    font-weight: 600;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* Button Styling */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #0D47A1;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 45%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="reset"] {
+    background-color: #1565C0;
+}
+
+button:hover {
+    background-color: #1976D2;
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 15px rgba(25, 118, 210, 0.5); 
+}
+
+button[type="reset"]:hover {
+    background-color: #0D47A1;
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .radio-container {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 

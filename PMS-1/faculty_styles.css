@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f5f7fa; /* Light gray background */
+    color: #333; /* Default text color */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #004080, #005cbf); /* Dark blue gradient */
+    padding: 15px 50px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Right Side Header */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right button {
+    background: none;
+    border: none;
+    color: white; /* Ensure button text is white */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-right .profile {
+    display: flex;
+    align-items: center; /* Align items in the profile section */
+    gap: 10px; /* Space between image and text */
+    color: white; /* Ensure profile text is white */
+}
+
+.header-right .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circular profile image */
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Ensure link text is white */
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 8px 12px;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #ff3b3b; /* Red background */
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: white; /* White text */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.logout-btn:hover {
+    background: #d63030; /* Darker red on hover */
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #0056b3, #003366); /* Dark blue gradient */
+    color: white;
+}
+
+.welcome h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 18px;
+}
+
+/* Quick Actions Section */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.action-card {
+    background: white; /* White background for cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px; /* Fixed width for cards */
+    transition: 0.3s;
+}
+
+.action-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.action-card p {
+    font-size: 14px;
+    color: #555; /* Darker gray for text */
+    margin-bottom: 15px;
+}
+
+.action-card a {
+    text-decoration: none;
+    background: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.action-card a:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+.action-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333; /* Dark gray background */
+    color: white; /* White text */
+    margin-top: 50px; /* Space above footer */
+}
+
+/* Profile Text Color */
+.profile {
+    color: #f5f0f0; /* Light color for profile text */
+}

@@ -1,0 +1,181 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Background */
+body {
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    min-height: 100vh; /* Ensure body takes full height */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #004080, #005cbf); /* Dark blue gradient */
+    padding: 15px 50px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Right Side Header */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right button {
+    background: none;
+    border: none;
+    color: white; /* Ensure button text is white */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-right .profile {
+    display: flex;
+    align-items: center; /* Align items in the profile section */
+    gap: 10px; /* Space between image and text */
+    color: white; /* Ensure profile text is white */
+}
+
+.header-right .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circular profile image */
+}
+
+/* Container with Glassmorphic Effect */
+.container {
+    flex: 1; /* Allow the container to grow and fill the space */
+    width: 100%;
+    /* max-width: 00px; */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    /* padding-left: 200px; */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Table Section */
+.table-section {
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between cells */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    position: relative;;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+table th {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover Animation */
+table tr:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Approve Button */
+.approve-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.approve-btn:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.1);
+}
+
+/* Reject Button */
+.reject-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #c82333; /* Darker red */
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
